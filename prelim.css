@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 900px;
-    background-color: #f0f0f0;
+    background-color: #d2ba78;
     margin: 0;
 }
 
@@ -16,14 +16,15 @@
     border: 2px solid #ccc;
     padding: 10px;
     margin-bottom: 10px;
+    border-radius: 10px;
 }
 
 #canvas1-img, #canvas2-img {
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
+    border-radius: 10px;
+    filter: drop-shadow(4px 4px 8px gray);
 }
-
-
 
 .changeColorBG:hover {
     background-color: #5d5839;
@@ -31,7 +32,7 @@
 }
 .changeColorBG {
     position: absolute;
-    margin-top: 40%;
+    margin-top: 45%;
     background-color: #000000;
     color: white;
     padding: 10px 20px;
@@ -42,7 +43,7 @@
 }
 .result{
     position: absolute;
-    margin-top: 50%;
+    margin-top: 55%;
 }
 .game{
     position: absolute;
@@ -52,5 +53,62 @@
     position: absolute;
     margin-top: 60%;
 }
+.draw{
+    position: absolute;
+    margin-top: 35%;
+}
+@media screen and (max-width: 768px) {
+    .main {
+        flex-direction: row;
+    }
 
- 
+    #canvas1-img, #canvas2-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .game {
+        font-size: 1.8rem;
+    }
+
+    .changeColorBG {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    .result, .win, .draw {
+        top: 110%;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main {
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    .container, .container1 {
+        padding: 10px;
+    }
+
+    #canvas1-img, #canvas2-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .game {
+        top: 60%;
+        font-size: 1.5rem;
+    }
+
+    .changeColorBG {
+        top: 100%;
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .result, .win, .draw {
+        top: 100%;
+        font-size: 1rem;
+    }
+}

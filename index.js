@@ -22,9 +22,9 @@ function random() {
     if (player1Choice === player2Choice) {
         result = "It's a tie!";
     } else if (
-        (player1Choice === 0 && player2Choice === 1) ||  // Paper beats Rock
-        (player1Choice === 1 && player2Choice === 2) ||  // Rock beats Scissors
-        (player1Choice === 2 && player2Choice === 0)     // Scissors beat Paper
+        (player1Choice === 0 && player2Choice === 1) ||  
+        (player1Choice === 1 && player2Choice === 2) || 
+        (player1Choice === 2 && player2Choice === 0)     
     ) {
         result = "Player 1 wins!";
     } else {
