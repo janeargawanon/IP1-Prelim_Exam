@@ -20,8 +20,8 @@
 }
 
 #canvas1-img, #canvas2-img {
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
     border-radius: 10px;
     filter: drop-shadow(4px 4px 8px gray);
 }
@@ -32,7 +32,7 @@
 }
 .changeColorBG {
     position: absolute;
-    margin-top: 45%;
+    margin-top: 35%;
     background-color: #000000;
     color: white;
     padding: 10px 20px;
@@ -43,16 +43,13 @@
 }
 .result{
     position: absolute;
-    margin-top: 55%;
+    margin-top: 45%;
 }
 .game{
     position: absolute;
     top: 40%;
 }
-.win{
-    position: absolute;
-    margin-top: 60%;
-}
+
 .draw{
     position: absolute;
     margin-top: 35%;
