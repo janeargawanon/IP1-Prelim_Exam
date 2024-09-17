@@ -11,7 +11,7 @@ function random() {
     } else if (player1Choice == 1) {
         document.getElementById("canvas1-img").src = "./img/226-2260873_transparent-rock-paper-scissors-png-png-download.png";
     } else {
-        document.getElementById("canvas1-img").src = "./img/lovepik-scissors-png-image_401704653_wh1200.png";
+        document.getElementById("canvas1-img").src = "img/images (1).png";
     }
 
     if (player2Choice == 0) {
@@ -19,7 +19,7 @@ function random() {
     } else if (player2Choice == 1) {
         document.getElementById("canvas2-img").src = "./img/226-2260873_transparent-rock-paper-scissors-png-png-download.png";
     } else {
-        document.getElementById("canvas2-img").src = "./img/lovepik-scissors-png-image_401704653_wh1200.png";
+        document.getElementById("canvas2-img").src = "img/images (1).png";
     }
 
     let result;
@@ -56,7 +56,7 @@ function random() {
 
         document.getElementById("score").textContent = finalResult;
 
-        setTimeout(resetGame, 2000); 
+        setTimeout(resetGame, 5000); 
     }
 }
 
